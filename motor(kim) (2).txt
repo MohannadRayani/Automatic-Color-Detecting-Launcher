@@ -1,0 +1,42 @@
+#include <Stepper.h>
+
+const float stepsPerRev = 32;  
+// change this to fit the number of steps per revolution
+// for your motor
+const float gearRedc = 64;
+//Amount of Gear Reduction
+
+const float stepsPerRevOut = stepsPerRev * gearRedc
+//Number of steps per geard output rotation
+
+int StepsRequired;
+//Number of steps required
+
+
+//Create Instance of Stepper Class
+//Specify Pins used (8,9,10,11)
+//Connected to Motor Driver In1, In2, In3, In4
+Stepper stepperMotor(stepsPerRev, 8, 9, 10, 11);
+
+int stepCount = 0;  // number of steps the motor has taken
+
+void setup() {
+  // nothing to do inside the setup
+}
+void loop() {
+  /*stepperMotor.setSpeed(1);
+  StepsRequired = 4;
+  stepperMotor.step(StepsRequired);
+  delay(2000);*/
+  
+  StepsRequired = stepsPerRevOut;
+  stepperMotor.setSpeed(100);
+  stepperMotor.step(StepsRequired);
+  delay(1000);
+  
+  StepsRequired = - stepsPerRevOut;
+  stepperMotor.setSpeed(700);
+  stepperMotor.step(StepsRequired);
+  delay(2000);
+}
+
