@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/CSS/arrows.css">
+<link rel="stylesheet" type="text/css" href="/CSS/Button.css">
+<link rel="stylesheet" type="text/css" href="/CSS/verticalNavigation.css">
+<link rel="stylesheet" type="text/css" href="/CSS/threeColumn.css">
+</head>
+<body style="background-color:#F08080">
+<div class="header">Color Detecting Machine</p></div>
+<div class="row">
+<div class="column"></div>
+<div class="column"></div>
+<div class="column">
+<ul>
+<li><a class="active" href="http://192.168.1.5">Home</a></li>
+<li><a href="http://192.168.1.5/livestream.html">Live Stream Feed</a></li>
+<li><a href="http://192.168.1.5/photo.html">Scanned Images</a></li>
+<li><a href="http://192.168.1.5/photo.php">Get Groovy</a></li>
+</ul>
+</div>
+</div>
+<p></p>
+<p></p>
+<div class="row">
+
+<div class="column"> 
+<form method="post" action='turnright.php'>
+<input type="submit" style="transform: rotate(-45deg);-webkit-transoform: rotate(-45deg);" name="rightT" value=""></form>
+</div>
+
+
+<div class="column">
+<form method"get" action='turnup.php'>
+<input type="submit" style="transform: rotate(-135deg);-webkit-transoform: rotate(-135deg);" name="upT" value=""></form>
+
+<p></p>
+
+<p></p>
+
+<form method"get" action='turndown.php'>
+<input type="submit" style="transform: rotate(45deg);-webkit-transoform: rotate(45deg);" name="downT" value=""></form>
+
+</div>
+
+<div class="column">
+
+
+<form method"get" action='turnleft.php'>
+<input type="submit" style="transform: rotate(135deg);-webkit-transoform: rotate(135deg);" name="leftT" value=""></form>
+
+
+</div>
+
+</div>
+
+
+
+
+ ?>
+</body>
