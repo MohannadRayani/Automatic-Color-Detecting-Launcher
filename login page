@@ -1,3 +1,33 @@
+
+<link rel="stylesheet" href="tab.css">
+<div class="form-wrap">
+  <div class="profile"><img width="120px" height="120px"src="https://s.yimg.com/cv/apiv2/default/ncaaf/20181226/500x500/minn_state_mankato_wbg.png">
+    <h1>Minnesota State, Mankato</h1>
+  </div>
+
+  <form method="post" action="form.php"> 
+  
+
+    <div>
+      <label for="USER" >USER</label>
+      <select name="USER">
+        <option>Select user</option>
+        <option value="Boss">Boss</option> 
+        <option value="Admin">Admin</option> 
+        <option value="student">student</option> 
+      </select> 
+    <div class="select-arrow"></div> 
+    </div>
+
+    <div>
+      <label for="PASSWORD" >PASSWORD</label>
+    <input type="text" name="PASSWORD"  required>
+    </div>
+    
+    <button type="submit" >SUBMIT</button> 
+  </form> 
+</div>
+=======
 *{box-sizing:border-box}
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i&subset=latin';
 body {
