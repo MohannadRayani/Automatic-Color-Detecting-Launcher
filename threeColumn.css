@@ -1,0 +1,29 @@
+* {
+box-sizing: border-box;
+}
+body {
+margin:0;
+}
+.header {
+color: #FFFFFF;
+text-align: center;
+padding: 30px;
+font-size: 60px;
+}
+.column {
+float: right;
+width: 33.33%;
+padding: 30px;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media screen and (max-width:600px) {
+.column{
+width: 100%;
+}
+}
+
